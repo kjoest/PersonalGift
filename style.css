@@ -317,4 +317,38 @@ body {
     text-align: center; /* Center the text within the quote */
   }
 
+  /* Media Queries */
+
+/* For screens approximately 6.7 inches wide (larger smartphones) */
+@media (max-width: 200px) {
+  .moon-container {
+    /* Adjust moon styles for larger smartphones */
+    display: flex;
+    flex-wrap: wrap; /* Allows moons to wrap to the next line */
+    justify-content: center;
+  }
+
+  .quote-container {
+    /* Adjust quote container styles for larger smartphones */
+    font-size: 18px; /* Reduce font size for quotes */
+  }
+
+  /* Reduce the size of your moon phases */
+  .new-moon,
+  .solar-eclipse,
+  .waxing-crescent-moon,
+  .first-quarter-moon,
+  .waxing-gibbous-moon,
+  .full-moon,
+  .lunar-eclipse,
+  .waning-gibbous-moon,
+  .third-quarter-moon,
+  .waning-crescent-moon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    /* Adjust other moon styles as needed */
+  }
+
+  /* Add other styles for this screen size here */
+}
   
