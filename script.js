@@ -66,7 +66,7 @@ function getCurrentPhaseIndex() {
   const now = Date.now();
   const startTime = localStorage.getItem('startTime');
   const timeElapsed = now - startTime;
-  const interval = 1000; /* 60000 */
+  const interval = 60000; /* 60000 */
   const totalPhases = moonPhases.length;
   return Math.floor((timeElapsed % (interval * totalPhases)) / interval);
 }
@@ -146,7 +146,7 @@ moonPhases.forEach((moon, index) => {
 });
 
 // Set the interval to update the moon phase every 5 seconds (5000 milliseconds)
-setInterval(showCurrentPhase, 1000); /* 60000 */
+setInterval(showCurrentPhase, 60000); /* 60000 */
 
 // Initialize the moon phases on page load
 initialize()

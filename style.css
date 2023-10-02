@@ -350,15 +350,15 @@ body {
   }
 
   .new-moon {
-    transform: translate(-300%, -75%);
+    transform: translate(-400%, -75%);
   }
 
   .solar-eclipse {
-    transform: translate(-300%, -75%);
+    transform: translate(-400%, -75%);
   }
 
   .waxing-crescent-moon {
-    transform: translate(-200%, 200%);
+    transform: translate(-300%, 200%);
   }
 
   .first-quarter-moon {
@@ -366,19 +366,19 @@ body {
   }
 
   .waxing-gibbous-moon {
-    transform: translate(200%, 200%);
+    transform: translate(300%, 200%);
   }
 
   .full-moon {
-    transform: translate(300%, -75%);
+    transform: translate(400%, -75%);
   }
 
   .lunar-eclipse {
-    transform: translate(300%, -75%);
+    transform: translate(400%, -75%);
   }
 
   .waning-gibbous-moon {
-    transform: translate(200%, -275%);
+    transform: translate(300%, -275%);
   }
 
   .third-quarter-moon {
@@ -386,7 +386,7 @@ body {
   }
 
   .waning-crescent-moon {
-    transform: translate(-200%, -250%);
+    transform: translate(-300%, -250%);
   }
 
   /* Add other styles for this screen size here */
