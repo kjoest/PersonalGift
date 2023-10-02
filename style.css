@@ -330,7 +330,8 @@ body {
 
   .quote-container {
     /* Adjust quote container styles for larger smartphones */
-    font-size: 18px; /* Reduce font size for quotes */
+    font-size: 15px; /* Reduce font size for quotes */
+    top: 45%;
   }
 
   /* Reduce the size of your moon phases */
