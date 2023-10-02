@@ -345,8 +345,8 @@ body {
   .waning-gibbous-moon,
   .third-quarter-moon,
   .waning-crescent-moon {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
   }
 
   .new-moon {
