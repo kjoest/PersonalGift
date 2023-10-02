@@ -1,0 +1,320 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Background Style */
+
+.night-sky {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%); */
+}
+
+/* Moon Phases */
+
+.moon-container {
+    position: absolute;
+    z-index: 3;
+}
+
+.new-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/NewMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(-550%, -10%);
+}
+
+.solar-eclipse {
+  width: 150px;
+  height: 175px;
+  border-radius: 50%;
+  background-image: url('images/SolarEclipse.png');
+  background-color: rgba(30, 30, 30, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(30, 30, 30, 0.8);
+  background-blend-mode: screen;
+  top: 50%;
+  left: 50%;
+  transform: translate(-550%, -10%);
+  display: none;
+}
+
+.waxing-crescent-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/WaxingCrescentMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform:translate(-350%, 150%);
+}
+
+.first-quarter-moon {
+  width: 150px;
+  height: 175px;
+  border-radius: 50%;
+  background-image: url('images/FirstQuarterMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(-50%, 175%);
+}
+
+.waxing-gibbous-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/WaxingGibbousMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(300%, 150%);
+}
+
+.full-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/FullMoonPicture.png');
+  background-color: rgba(255, 231, 155, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(255, 231, 155, 0.6);
+  background-blend-mode: screen;
+  right: 50%;
+  top: 50%;
+  transform: translate(550%, -10%);
+}
+
+.lunar-eclipse {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/LunarEclipse.png');
+  background-color: rgba(70, 30, 20, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(70, 30, 20, 0.8);
+  background-blend-mode: screen;
+  right: 50%;
+  top: 50%;
+  transform: translate(550%, -10%);
+  display: none;
+}
+
+.waning-gibbous-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/WaningGibbousMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(300%, -150%);
+}
+
+.third-quarter-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/ThirdQuarterMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(-50%, -175%) rotate(15deg);
+}
+
+.waning-crescent-moon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('images/WaningCrescentMoon.png');
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.6);
+  background-blend-mode: screen;
+  transform: translate(-350%, -150%) rotate(30deg);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes twinkling {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px #fff;
+    animation: twinkling infinite linear alternate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--random-delay);
+}
+
+.star {
+    top: var(--random-y);
+    left: var(--random-x);
+}
+
+.star:nth-child(1) { --random-x: 0.1; --random-y: 0.5; }
+.star:nth-child(2) { --random-x: 0.3; --random-y: 0.2; }
+
+.shooting-star {
+    z-index: 10;
+    width: 7px;
+    height: 90px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    transform-origin: bottom right;
+    transform: rotate(120deg);
+    animation: animShootingStar 6s linear;
+    opacity: 0;
+  }
+  
+  @keyframes animShootingStar {
+    from {
+      transform: translate(0, 0) rotate(120deg);
+      opacity: 1;
+      height: 0;
+    }
+  
+    to {
+      transform: translate(calc(100vw + 10px), calc(100vh + 10px)) rotate(120deg);
+      opacity: 0;
+      height: 300px; /* Adjust this value to make the trail longer */
+    }
+  }
+
+  .floating-image {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    opacity: 0.8;
+    transform-origin: center bottom;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.4));
+    /* Define the animation for floating images only */
+    animation: float 8s infinite linear alternate;
+  }
+  
+  /* Styling for the floating container */
+  .floating-container {
+    position: relative;
+    width: 400px;
+    height: auto;
+    overflow: hidden; /* To prevent quotes from spilling outside the container */
+  }
+  
+  /* Styling for the quotes */
+  .floating-container .quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    z-index: 1;
+  }
+
+  /* Quotes */
+
+  .quote-container {
+    position: absolute;
+    top: 50%; /* Adjust vertical position as needed */
+    left: 50%; /* Adjust horizontal position as needed */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth fading in/out effect */
+    animation: float 8s infinite alternate ease-in-out; /* Floating animation */
+  }
+  
+  /* Keyframes for the floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-50%, -50%) translateY(-10px) rotate(2deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(10px) rotate(-2deg);
+    }
+    75% {
+      transform: translate(-50%, -50%) translateY(-2px) rotate(1deg);
+    }
+  }
+
+  .quote-container .quote {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the quote horizontally within the container */
+    text-align: center; /* Center the text within the quote */
+  }
+
+  
