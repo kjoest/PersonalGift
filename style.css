@@ -320,7 +320,7 @@ body {
   /* Media Queries */
 
 /* For screens approximately 6.7 inches wide (larger smartphones) */
-@media (max-width: 200px) {
+@media (max-width: 400px) {
   .moon-container {
     /* Adjust moon styles for larger smartphones */
     display: flex;
@@ -347,7 +347,46 @@ body {
   .waning-crescent-moon {
     width: 50px; /* Adjust the size as needed */
     height: 50px; /* Adjust the size as needed */
-    /* Adjust other moon styles as needed */
+  }
+
+  .new-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .solar-eclipse {
+    transform: translate(-50%, -50%);
+  }
+
+  .waxing-crescent-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .first-quarter-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .waxing-gibbous-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .full-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .lunar-eclipse {
+    transform: translate(-50%, -50%);
+  }
+
+  .waning-gibbous-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .third-quarter-moon {
+    transform: translate(-50%, -50%);
+  }
+
+  .waning-crescent-moon {
+    transform: translate(-50%, -50%);
   }
 
   /* Add other styles for this screen size here */
