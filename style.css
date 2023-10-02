@@ -320,7 +320,7 @@ body {
   /* Media Queries */
 
 /* For screens approximately 6.7 inches wide (larger smartphones) */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .moon-container {
     /* Adjust moon styles for larger smartphones */
     display: flex;
