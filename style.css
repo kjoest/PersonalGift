@@ -330,7 +330,7 @@ body {
 
   .quote-container {
     /* Adjust quote container styles for larger smartphones */
-    font-size: 15px; /* Reduce font size for quotes */
+    font-size: 10px; /* Reduce font size for quotes */
     top: 45%;
   }
 
@@ -350,43 +350,43 @@ body {
   }
 
   .new-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(-250%, -50%);
   }
 
   .solar-eclipse {
-    transform: translate(-50%, -50%);
+    transform: translate(-250%, -50%);
   }
 
   .waxing-crescent-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(-175%, 200%);
   }
 
   .first-quarter-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, 400%);
   }
 
   .waxing-gibbous-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(175%, 200%);
   }
 
   .full-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(250%, -50%);
   }
 
   .lunar-eclipse {
-    transform: translate(-50%, -50%);
+    transform: translate(250%, -50%);
   }
 
   .waning-gibbous-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(175%, -275%);
   }
 
   .third-quarter-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(10%, -400%);
   }
 
   .waning-crescent-moon {
-    transform: translate(-50%, -50%);
+    transform: translate(-175%, -250%);
   }
 
   /* Add other styles for this screen size here */
